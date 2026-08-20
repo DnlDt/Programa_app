@@ -1,5 +1,5 @@
 import exemplosVariaveis from "./scripts/variaveis.js";
-import exemplocondicionais from "./scripts/condicionais.js";
+import exemplocondicionais from "./scripts/outros/condicionais.js";
 //import ... from "./scripts/variaveis.js": É o arquivo main.js buscando essa função no caminho/local indicado para poder usá-la localmente.
 
 
