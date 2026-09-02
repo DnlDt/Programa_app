@@ -1,8 +1,81 @@
 function exemplosVariaveis() {
-    console.log("Olá, mundo! origem variaveis.js");
-}
-//O que significa Exportar e Importar? Por padrão no JavaScript modernizado, cada arquivo é um "mundo isolado" (módulo). O que você cria dentro de variaveis.js fica invisível para o resto do sistema.
+    console.log("variaveis.js rodando...");
 
+
+    const nome = 'João Silva';  // String
+    const idade = 18; // Number
+    const possuiFaculdade = true; // Boolean
+    const time = "Brasil"; // String
+    const comida = null; // Null
+    const novoObjeto = {} // Object
+    const hoje = new Date(); //vai dizer o dia o mes o ano e o horario
+    console.log("Typeof nome:", typeof nome); // type of = tipo da variavel, por exemplo string number object etc...
+    console.log("Typeof idade:", typeof idade);
+    console.log("Typeof possuiFaculdade:", typeof possuiFaculdade);
+    console.log("Typeof time:", typeof time);
+    console.log("Typeof comida:", typeof comida);
+    console.log("Typeof novoObjeto:", typeof novoObjeto);
+    console.log("Typeof hoje:", typeof hoje);
+
+    const gols = 1000;
+    const frase = 'Pelé fez ' + gols + ' gols';
+
+    'JavaScript é "super" fácil';
+    "JavaScript é 'super' fácil";
+
+    "JavaScript é \"super\" fácil";
+
+    "JavaScript é super fácil"; // Inválido
+
+    `JavaScript é "super" fácil"`;
+
+    const fraseDois = `Pelé fez ${gols} gols`;
+
+    // const numeroUm = prompt("Informe um número:");
+    // const numeroDois = prompt("Informe outro número:");
+
+    // if (isNaN(numeroUm) || isNaN(numeroDois)) { Se o numeroUm NÃO for um número OU o numeroDois NÃO for um número, execute o bloco abaixo
+    //     alert("Por favor, informe apenas números.");
+    //     return; o return faz a funcao parar de executar na hora, se nao colocar o return ele vai continuar executando a função e somar as letras mesmo assim
+    // }
+
+    // const resultado = +numeroUm + +numeroDois;
+    // alert(resultado.toString()); Pega o valor final da soma, converte de volta para texto (toString()) e exibe o resultado na tela usando uma janela de alerta.
+
+    const expoente = 3 ** 2; // 9 "Ao Quadrado"
+    const modulo = 15 % 2; // 1"Resto da divisão"
+
+    const soma = '100' + 50; // 10050
+    const subtracao = '100' - 50; // 50
+    const multiplicacao = '100' * '2'; // 200
+    const divisao = 'Blabla 100' / 2; // NaN (Not a Number)
+
+    // É possível verificar se uma variável é NaN ou não com a função isNaN()
+    const numero = 70;
+    const unidade = 'kg';
+    const peso = numero + unidade; // '80kg'
+    const pesoPorDois = peso / 2; // NaN (Not a Number)
+
+
+    let incremento = 5;
+    console.log(incremento++); // 5 soma depois de mostrar o resultado
+    console.log(incremento); // 6
+
+    let incremento2 = 5;
+    console.log(++incremento2); // 6 soma antes de mostrar o resultado 
+    console.log(incremento2); // 6 
+
+    const frase3 = 'Isso é um teste';
+    +frase3; // NaN o + ou - antes de uma variavel tenta converter a variavel em numero 
+    -frase3; // NaN
+
+    const idade2 = '28';
+    +idade2; // 28 (número) 
+    -idade2; // -28 (número)
+    console.log(+idade2 + 5); // 33 
+
+    const possuiFaculdade2 = true;
+    console.log(+possuiFaculdade2); // 1
+}
 
 export default exemplosVariaveis;
-//export default: É a forma de dizer: "Estou tornando esta função pública para quem quiser usá-la em outro arquivo".

@@ -1,13 +1,21 @@
 import exemplosVariaveis from "./scripts/variaveis.js";
-import exemplocondicionais from "./scripts/outros/condicionais.js";
-//import ... from "./scripts/variaveis.js": É o arquivo main.js buscando essa função no caminho/local indicado para poder usá-la localmente.
-
+import exemplosCondicionais from "./scripts/outros/condicionais.js";
+import exemplosDatas from "./scripts/datas.js";
+import exemplosObjetos from "./scripts/objetos.js"
+import exemplosArrays from "./scripts/arrays.js";
 
 const btnVariaveis = document.getElementById("btnVariaveis");
-btnVariaveis.addEventListener("click", exemplosVariaveis)
-//Significa "escutador de eventos". Ele fica de "vigia" no elemento HTML que você selecionou:
-//btnVariaveis: O botão que você pegou do HTML pelo ID.
-//"click": O tipo de evento que ele está escutando (quando o usuário clica no botão).
-//exemplosVariaveis: A função que será disparada toda vez que esse clique acontecer.
+btnVariaveis.addEventListener("click", exemplosVariaveis);
 
-document.getElementById("btnCondicionais").addEventListener("click", exemplocondicionais)
+document.getElementById("btnCondicionais")
+    .addEventListener("click", exemplosCondicionais)
+
+document.getElementById("btnDatas")
+    .addEventListener("click", exemplosDatas)
+
+document.getElementById("btnObjetos")
+    .addEventListener("click", exemplosObjetos)
+
+document.getElementById("btnArrays")
+    .addEventListener("click", exemplosArrays)
+    
