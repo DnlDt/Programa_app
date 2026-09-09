@@ -76,6 +76,10 @@ function exemplosVariaveis() {
 
     const possuiFaculdade2 = true;
     console.log(+possuiFaculdade2); // 1
+    //Exercicios
+    
+    //14
+    
 }
 
 export default exemplosVariaveis;

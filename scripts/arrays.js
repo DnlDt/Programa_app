@@ -47,6 +47,20 @@ function exemplosArrays() {
         console.log(i);
     }
 
+    const novasFrutas = ['Banana', 'Morango', 'Uva'];
+    for (let i = 0; i <= novasFrutas.length - 1; i++) {
+        console.log(novasFrutas[i]);
+    }
+
+    var novosVideoGames = ['Switch', 'PS4', 'XBox', '3DS'];
+    for (var i = 0; i < novosVideoGames.length; i++) {
+        console.log(novosVideoGames[i]);
+        if (novosVideoGames[i] === 'PS4') {
+            break;
+        }
+    }
+
+
 
 }
 

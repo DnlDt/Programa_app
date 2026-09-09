@@ -3,6 +3,7 @@ import exemplosCondicionais from "./scripts/outros/condicionais.js";
 import exemplosDatas from "./scripts/datas.js";
 import exemplosObjetos from "./scripts/objetos.js"
 import exemplosArrays from "./scripts/arrays.js";
+import exemploFuncoes from "./scripts/funcoes.js";
 
 const btnVariaveis = document.getElementById("btnVariaveis");
 btnVariaveis.addEventListener("click", exemplosVariaveis);
@@ -18,4 +19,6 @@ document.getElementById("btnObjetos")
 
 document.getElementById("btnArrays")
     .addEventListener("click", exemplosArrays)
-    
+
+document.getElementById("btnFuncoes")
+    .addEventListener("click", exemploFuncoes)
