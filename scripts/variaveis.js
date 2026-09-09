@@ -1,6 +1,7 @@
 function exemplosVariaveis() {
     console.log("variaveis.js rodando...");
 
+
     const nome = 'João Silva';  // String
     const idade = 18; // Number
     const possuiFaculdade = true; // Boolean
@@ -30,6 +31,17 @@ function exemplosVariaveis() {
 
     const fraseDois = `Pelé fez ${gols} gols`;
 
+    // const numeroUm = prompt("Informe um número:");
+    // const numeroDois = prompt("Informe outro número:");
+
+    // if (isNaN(numeroUm) || isNaN(numeroDois)) { Se o numeroUm NÃO for um número OU o numeroDois NÃO for um número, execute o bloco abaixo
+    //     alert("Por favor, informe apenas números.");
+    //     return; o return faz a funcao parar de executar na hora, se nao colocar o return ele vai continuar executando a função e somar as letras mesmo assim
+    // }
+
+    // const resultado = +numeroUm + +numeroDois;
+    // alert(resultado.toString()); Pega o valor final da soma, converte de volta para texto (toString()) e exibe o resultado na tela usando uma janela de alerta.
+
     const expoente = 3 ** 2; // 9 "Ao Quadrado"
     const modulo = 15 % 2; // 1"Resto da divisão"
 
@@ -38,10 +50,12 @@ function exemplosVariaveis() {
     const multiplicacao = '100' * '2'; // 200
     const divisao = 'Blabla 100' / 2; // NaN (Not a Number)
 
+    // É possível verificar se uma variável é NaN ou não com a função isNaN()
     const numero = 70;
     const unidade = 'kg';
     const peso = numero + unidade; // '80kg'
     const pesoPorDois = peso / 2; // NaN (Not a Number)
+
 
     let incremento = 5;
     console.log(incremento++); // 5 soma depois de mostrar o resultado
@@ -62,74 +76,10 @@ function exemplosVariaveis() {
 
     const possuiFaculdade2 = true;
     console.log(+possuiFaculdade2); // 1
-
-    const numeros = [3, 7, 15, 19, 53, 9, 10, 30, 34, 12];
-
-    const usuarios = [
-        { nome: "João", sobrenome: "Silva", idade: 20, temPet: true },
-        { nome: "Maria", sobrenome: "Souza", idade: 15, temPet: true },
-        { nome: "Pedro", sobrenome: "Santos", idade: 17, temPet: false },
-        { nome: "Ana", sobrenome: "Lima", idade: 25, temPet: false },
-        { nome: "Lucas", sobrenome: "Mendes", idade: 12, temPet: true }
-    ];
-
-    // 14. Números maiores que 20
-    console.log("\n--- Exercício 14 ---");
-    let length_num = numeros.length;
-    for (let c = 0; c < length_num; c++) {
-        if (numeros[c] > 20) {
-            console.log(numeros[c]);
-        }
-    }
-
-    // 15. Números ímpares
-    console.log("\n--- Exercício 15 ---");
-    for (let c = 0; c < numeros.length; c++) {
-        if (numeros[c] % 2 === 1) {
-            console.log(numeros[c]);
-        }
-    }
-
-    // 16. Usuários maiores de idade 
-    console.log("\n--- Exercício 16 ---");
-    for (let i = 0; i < usuarios.length; i++) {
-        if (usuarios[i].idade >= 18) {
-            console.log(usuarios[i]);
-        }
-    }
-
-    // 17. Usuários menores de idade (< 18) com animais de estimação
-    console.log("\n--- Exercício 17 ---");
-    for (let i = 0; i < usuarios.length; i++) {
-        if (usuarios[i].idade < 18 && usuarios[i].temPet) {
-            console.log(usuarios[i]);
-        }
-    }
-
-    // 18. Lista de strings com "Nome Sobrenome"
-    console.log("\n--- Exercício 18 ---");
-    const nomesCompletos = [];
-    for (let i = 0; i < usuarios.length; i++) {
-        nomesCompletos.push(`${usuarios[i].nome} ${usuarios[i].sobrenome}`);
-    }
-    console.log(nomesCompletos);
-
-    // 19. FizzBuzz (Múltiplos de 3="Fizz", 5="Buzz", ambos="FizzBuzz")
-    console.log("\n--- Exercício 19 ---");
-    const resultadoFizzBuzz = [];
-    for (let i = 0; i < numeros.length; i++) {
-        const num = numeros[i];
-        if (num % 3 === 0 && num % 5 === 0) {
-            resultadoFizzBuzz.push("FizzBuzz");
-        } else if (num % 3 === 0) {
-            resultadoFizzBuzz.push("Fizz");
-        } else if (num % 5 === 0) {
-            resultadoFizzBuzz.push("Buzz");
-        } else {
-            resultadoFizzBuzz.push(num);
-        }
-    }
-    console.log(resultadoFizzBuzz);
+    //Exercicios
+    
+    //14
+    
 }
 
 export default exemplosVariaveis;
